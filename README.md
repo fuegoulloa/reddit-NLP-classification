@@ -18,11 +18,11 @@ There are four datasets available in the data folder, two for each subreddit. Yo
 |---|---|---|
 |**post_title**|_object_|The title of the subreddit post. String format, no units.|
 |**post_text**|_object_|The text of the subreddit post. String format, no units.|
-|**post_title_length**|_object_|The length of the title. Integer format, unit in characters.|
-|**post_title_wc**|_object_|The number of words in the title. Integer format, unit in words.|
-|**post_text_length**|_object_|The length of the text. Integer format, unit in characters.|
-|**post_text_wc**|_object_|The number of words in the text. Integer format, unit in words.|
-|**topic**|_object_|Binary designation to denote whether a post is from the real estate subreddit (0), or the travel subreddit (1). Integer format, no units.|
+|**post_title_length**|_integer_|The length of the title. Integer format, unit in characters.|
+|**post_title_wc**|_integer_|The number of words in the title. Integer format, unit in words.|
+|**post_text_length**|_integer_|The length of the text. Integer format, unit in characters.|
+|**post_text_wc**|_integer_|The number of words in the text. Integer format, unit in words.|
+|**topic**|_integer_|Binary designation to denote whether a post is from the real estate subreddit (0), or the travel subreddit (1). Integer format, no units.|
 
 ---
 
