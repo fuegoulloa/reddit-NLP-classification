@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: TBD
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Web APIs and NLP
 
 ### Problem Statement
 
@@ -22,7 +22,7 @@ There are four datasets available in the data folder, two for each subreddit. Yo
 |**post_title_wc**|_integer_|The number of words in the title. Integer format, unit in words.|
 |**post_text_length**|_integer_|The length of the text. Integer format, unit in characters.|
 |**post_text_wc**|_integer_|The number of words in the text. Integer format, unit in words.|
-|**topic**|_integer_|Binary designation to denote whether a post is from the real estate subreddit (0), or the travel subreddit (1). Integer format, no units.|
+|**topic**|_integer_|Binary designation to denote whether a post is from the real estate subreddit (`0`), or the travel subreddit (`1`). Integer format, no units.|
 
 ---
 
