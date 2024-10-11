@@ -28,14 +28,19 @@ There are four datasets available in the data folder, two for each subreddit. Yo
 
 ### Summary
 
-Lorem ipsum, dolor sit amet, Latin gave birth to romance languages...
+Every single model exceeded the baseline accuracy, which was calculated at 51.5%.<br><br>
+The worst performing model was the `KNeighborsClassifier` when coupled with the transformer `CountVectorizer`, its accuracy rate was 77.8%.  The key focus, though, was classification rate, so that same model missclassified travel posts a staregging 22.2% of the time!<br><br>
+Interestingly, `KNeighborsClassifier` performed better when paired with the `TfidfVectorizer` transformer. That being said, on this specific iteration, the tuning of the hyperparameters allowed for a wider range of _**k**_ values to try on.<br><br>
+The best performing model was `LogisticRegression` when paired with `TfidfVectorizer`.  This model achieved the lowest misclassfication rate at 5.7%, which is still relatively high given the fact that travel and real estate are very distinct topics. The most interesting insight for this model, as far as the hyperparameters were concerned, was that it was given the choice to also tokenize the text based on bi-grams by passing the option to the `ngram_range` parameter.  Based on the returned best parameters, that's exactly what it did, it did better with the bi-grams.<br><br>
+The `RandomForestClassifier` models didn't do so well when graded by misclassification rate (over 13% in both iterattions).  More fine tuning of the hyper parameters may be needed, but the grid searches for these classifiers consume a lot of time, so this is recommended for a future iteration of this project.
 
 
 ---
 
 ### Recommendation
 
-Travel and Real Estate...
+* Continue fine tuning the hyper parameters to see if a misclassification rate of less than 1% can be achieved.
+* Scrape data from other subbreddits, specially two that are similar in topic (i.e. Travel vs. Travel Hacks) to see if the performance suffers or stays the same.
 
 ---
 
